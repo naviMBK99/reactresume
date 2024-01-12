@@ -1,0 +1,110 @@
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  background: none;
+}
+div {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  color: white;
+}
+h5 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+.pictures {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+}
+footer p {
+  color: white !important;
+  font-size: 14px;
+}
+footer {
+  width: 100% !important;
+}
+header {
+  width: 100%;
+}
+.sidebar {
+  animation: myAnim 4s ease 0s 1 normal forwards;
+}
+header {
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+  0% {
+    letter-spacing: 1em;
+    transform: translateY(300px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 1440) {
+  .sidebar {
+    margin-top: -209px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    width: 880px;
+  }
+  .header-photo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .header-text h2 {
+    font-size: 14px;
+  }
+
+  .header-text p {
+    font-size: 14px;
+  }
+  .main-content p {
+    font-size: 14px;
+  }
+  footer {
+    width: 880px !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .sidebar {
+    width: 50% !important;
+  }
+  .header-photo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .header-text h2 {
+    font-size: 14px;
+  }
+
+  .header-text p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header-photo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header-text h2 {
+    font-size: 14px;
+  }
+
+  .header-text p {
+    font-size: 14px;
+  }
+}

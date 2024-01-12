@@ -1,13 +1,203 @@
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  background-image: url("https://ngcmshak.ru/uploads/dsn/fe/72/001/1587646418_38-p-besshovnie-foni-dlya-saitov-112.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-photo {
+  display: flex;
+  align-items: center;
+}
+
+.header-photo img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.header-text {
+  text-align: left;
+}
+
+.header-text h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.header-text p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.header-nav nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-nav nav ul li {
+  margin-right: 15px;
+}
+
+.header-nav nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+.header-nav nav ul li a:hover {
+  color: #f8d53e;
+}
+
+.main-section {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.sidebar {
+  background-color: #020230;
+  color: #fff;
+  width: 30%;
+  padding: 20px;
+  height: auto;
+  /* margin-top: -68px; */
+}
+
+.main-content {
+  position: relative;
+  height: auto;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  transition: color 5s ease-in-out;
+}
+
+.sidebar a:hover {
+  color: #f8d53e;
+}
+.skills-container {
+  max-width: 500px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.h1_sidebar {
+  color: #333;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  background: none;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.skill-name {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background: none;
+  border: 10px solid #ccc;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 15px;
+  color: wheat;
+}
+
+.progress-bar::before {
+  content: attr(data-percent) "%";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  clip-path: conic-gradient(
+    wheat 0% var(--percent),
+    transparent var(--percent) 100%
+  );
+}
+.main-content {
+  flex: 1;
+  padding: 20px;
+  border-left: 2px solid #00274d;
+}
+.timeline-event-content-image-1 img {
+  width: 50%;
+  height: 300px;
+}
+.list-1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  list-style: none;
+}
+
+footer {
+  background-image: url(https://usuploads.s3.amazonaws.com/itlearn360/uploads/2018/09/Footer-Background-Image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  width: 98%;
+  height: 200px;
 }
