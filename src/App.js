@@ -1,13 +1,17 @@
 import React from "react";
 import Header from "./components/Header";
-import MainSection1 from "./components/MainSection1";
+
 import Footer from "./components/Footer";
+
+import MainRoutes from "./MainRoutes";
 
 const App = () => {
   return (
     <div>
       <Header />
-      <MainSection1 />
+      {/* <MainSection1 /> */}
+      {/* <RickMortyList /> */}
+      <MainRoutes />
       <Footer />
     </div>
   );

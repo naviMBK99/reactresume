@@ -7,6 +7,7 @@ body {
   flex-direction: column;
   height: auto;
   overflow-x: hidden;
+  position: relative;
 }
 
 header {
@@ -52,18 +53,26 @@ header {
   opacity: 0.7;
 }
 
-.header-nav nav ul {
-  list-style-type: none;
+.navlink {
+  text-decoration: none;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: space-around;
 }
 
-.header-nav nav ul li {
-  margin-right: 15px;
+.navlink {
+  margin-right: 30px;
+  gap: 20px;
 }
-
+.navlink p:hover {
+  color: blue;
+}
+.navlink p {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
 .header-nav nav ul li a {
   text-decoration: none;
   color: #fff;
@@ -87,7 +96,7 @@ header {
 .sidebar {
   background-color: #020230;
   color: #fff;
-  width: 30%;
+  width: 100%;
   padding: 20px;
   height: auto;
   /* margin-top: -68px; */
@@ -200,4 +209,6 @@ footer {
   padding: 10px;
   width: 98%;
   height: 200px;
+  /* position: absolute;
+  bottom: 0; */
 }

@@ -7,9 +7,9 @@ const Footer = () => {
   return (
     <div>
       <footer>
-        <div class="footer-content" id="contact"></div>
-        <div class="footer-content">
-          <div class="social-icons">
+        <div className="footer-content" id="contact"></div>
+        <div className="footer-content">
+          <div className="social-icons">
             <a
               href="https://www.instagram.com/"
               target="_blank"
@@ -32,7 +32,7 @@ const Footer = () => {
               <img src={Youtube} alt="Youtube" />
             </a>
           </div>
-          <div class="contact-info">
+          <div className="contact-info">
             <p>Contact:</p>
             <p>Email: dwayne@example.com</p>
             <p>Phone: +1 123-456-7890</p>

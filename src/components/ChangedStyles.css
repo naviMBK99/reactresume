@@ -24,28 +24,43 @@ footer p {
 footer {
   width: 100% !important;
 }
+
 header {
   width: 100%;
 }
-.sidebar {
-  animation: myAnim 4s ease 0s 1 normal forwards;
-}
-header {
-  animation: myAnim 2s ease 0s 1 normal forwards;
+
+/* body {
+  animation: myAnim 6s ease 0s 1 normal forwards;
 }
 @keyframes myAnim {
   0% {
-    letter-spacing: 1em;
-    transform: translateY(300px);
-    filter: blur(12px);
+    transform: rotate(-540deg) scale(0);
     opacity: 0;
   }
 
   100% {
-    transform: translateY(0px);
-    filter: blur(0);
+    transform: rotate(0) scale(1);
     opacity: 1;
   }
+} */
+.character-name {
+  color: black;
+}
+.character-gender {
+  color: black;
+}
+.container-character {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.container-character img {
+  width: 500px;
+  height: auto;
+}
+.li {
+  text-decoration: none;
 }
 @media screen and (max-width: 1440) {
   .sidebar {
@@ -75,7 +90,55 @@ header {
     width: 880px !important;
   }
 }
-
+.container-character {
+  margin-left: 350px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 600px;
+  text-align: center;
+  margin-top: 20px;
+}
+.container-character:hover {
+  transition: all ease-in;
+}
+.container-character img {
+  width: 300px;
+  margin: 0 auto;
+}
+.container-character span {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.timeline-event-content p {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.timeline-event-content img {
+  width: 100%;
+  height: auto;
+}
+.timeline-event-content-image-1 img {
+  width: 500px !important;
+  height: 300px !important;
+  margin-left: 20px;
+}
+.films-and-series-content {
+  background-color: #020230;
+}
+.films-and-series-content h2 {
+  color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.timeline-event-content p {
+  color: white;
+}
+.timeline-event-content h5 {
+  color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+}
 @media screen and (max-width: 425px) {
   .sidebar {
     width: 50% !important;
